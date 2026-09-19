@@ -4,7 +4,7 @@ Documento de planejamento da prática de Extreme Programming (XP) de **Pair
 Programming**, adaptada para o contexto de trabalho individual, conforme a
 Tarefa 3b do Projeto Final da disciplina de Engenharia de Software.
 
-- **Aluno:** Vinicius Costa Chaves
+- **Aluno:** Vinicius 
 - **Modalidade:** individual 
 
 ---

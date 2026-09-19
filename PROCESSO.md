@@ -4,7 +4,7 @@ Documento de justificativa do processo ágil escolhido para o desenvolvimento
 das 5 novas funcionalidades solicitadas pelo cliente, conforme a Tarefa 2 do
 Projeto Final da disciplina de Engenharia de Software.
 
-- **Aluno:** Vinicius Costa Chaves
+- **Aluno:** Vinicius 
 - **Modalidade:** individual
 - **Processo escolhido:** **Scrum**
 
@@ -72,7 +72,6 @@ O prazo total (até o final da Semana 3) foi dividido em **2 Sprints**:
 | Sprint 1 | Semana 2 | Funcionalidades de maior prioridade e menor complexidade |
 | Sprint 2 | Semana 3 | Funcionalidades restantes + revisão final |
 
-> Ajuste as datas conforme o calendário real da sua turma antes de entregar.
 
 ---
 
@@ -108,10 +107,6 @@ Sprint Backlog correspondente, na ordem de prioridade definida:
 | 4 | Perfil de usuário com histórico | Sprint 2 | Depende de perguntas e respostas já existirem com mais metadados (tags, votos) para fazer sentido no histórico |
 | 5 | Notificação de novas respostas | Sprint 2 | Maior complexidade técnica (precisa de um mecanismo de aviso), e depende conceitualmente do perfil de usuário já existir |
 
-> Ao criar os cards de verdade no GitHub Projects, adicione a cada um: uma
-> descrição curta da funcionalidade, o rótulo da Sprint (`sprint-1` /
-> `sprint-2`) e, se o board permitir, um campo de prioridade numérica igual
-> à tabela acima.
 
 ---
 

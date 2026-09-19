@@ -5,7 +5,7 @@ princípio de **Design Simples** e do **YAGNI** (*You Aren't Gonna Need It*),
 conforme solicitado na Tarefa 3a do Projeto Final da disciplina de
 Engenharia de Software.
 
-- **Aluno:** Vinicius Costa Chaves
+- **Aluno:** Vinicius 
 - **Nota sobre o enunciado:** o enunciado da tarefa menciona os arquivos
   `routes/perguntas.js` e `routes/respostas.js`. Essa estrutura de pastas
   **não existe** na versão atual do repositório (`jeffsantos/esmforum`, via
@@ -21,7 +21,7 @@ Engenharia de Software.
 
 O sistema tem exatamente duas camadas: `server.js` (rotas HTTP / controle) e
 `modelo.js` (acesso a dados). Não existe camada de "serviço" ou "repositório"
-intermediária, nem um ORM completo — o acesso ao SQLite é direto. Para um
+intermediária, nem um ORM completo  o acesso ao SQLite é direto. Para um
 sistema do tamanho do ESM Forum (poucas entidades, poucas operações), isso é
 exatamente o nível de complexidade necessário. Adicionar uma camada de
 serviços ou um ORM completo agora seria complexidade especulativa: nenhuma
