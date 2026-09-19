@@ -107,10 +107,6 @@ Sprint Backlog correspondente, na ordem de prioridade definida:
 | 4 | Perfil de usuário com histórico | Sprint 2 | Depende de perguntas e respostas já existirem com mais metadados (tags, votos) para fazer sentido no histórico |
 | 5 | Notificação de novas respostas | Sprint 2 | Maior complexidade técnica (precisa de um mecanismo de aviso), e depende conceitualmente do perfil de usuário já existir |
 
-> Ao criar os cards de verdade no GitHub Projects, adicione a cada um: uma
-> descrição curta da funcionalidade, o rótulo da Sprint (`sprint-1` /
-> `sprint-2`) e, se o board permitir, um campo de prioridade numérica igual
-> à tabela acima.
 
 ---
 
