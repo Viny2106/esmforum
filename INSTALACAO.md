@@ -4,7 +4,7 @@ Documentação do processo de configuração do ambiente de desenvolvimento do
 **ESM Forum** (backend Node.js/Express/SQLite + frontend React), realizada como
 parte da Tarefa 1 do Projeto Final da disciplina de Engenharia de Software.
 
-- **Aluno:** Vinicius Costa Chaves
+- **Aluno:** Vinicius 
 - **Modalidade:** individual
 - **Ambiente utilizado:** macOS (Apple Silicon)
 
