@@ -4,7 +4,7 @@ Documento de justificativa do processo ágil escolhido para o desenvolvimento
 das 5 novas funcionalidades solicitadas pelo cliente, conforme a Tarefa 2 do
 Projeto Final da disciplina de Engenharia de Software.
 
-- **Aluno:** Vinicius Costa Chaves
+- **Aluno:** Vinicius 
 - **Modalidade:** individual
 - **Processo escolhido:** **Scrum**
 
