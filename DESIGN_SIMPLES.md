@@ -5,7 +5,7 @@ princípio de **Design Simples** e do **YAGNI** (*You Aren't Gonna Need It*),
 conforme solicitado na Tarefa 3a do Projeto Final da disciplina de
 Engenharia de Software.
 
-- **Aluno:** Vinicius Costa Chaves
+- **Aluno:** Vinicius 
 - **Nota sobre o enunciado:** o enunciado da tarefa menciona os arquivos
   `routes/perguntas.js` e `routes/respostas.js`. Essa estrutura de pastas
   **não existe** na versão atual do repositório (`jeffsantos/esmforum`, via
