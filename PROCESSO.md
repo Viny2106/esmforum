@@ -72,7 +72,6 @@ O prazo total (até o final da Semana 3) foi dividido em **2 Sprints**:
 | Sprint 1 | Semana 2 | Funcionalidades de maior prioridade e menor complexidade |
 | Sprint 2 | Semana 3 | Funcionalidades restantes + revisão final |
 
-> Ajuste as datas conforme o calendário real da sua turma antes de entregar.
 
 ---
 
