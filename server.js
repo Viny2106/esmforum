@@ -31,6 +31,17 @@ app.post('/perguntas', (req, res) => {
   } 
 });
 
+app.get('/perguntas/busca', (req, res) => {
+  try {
+    const termo = req.query.termo || '';
+    const resultados = modelo.buscar_perguntas(termo);
+    res.json(resultados);
+  }
+  catch(erro) {
+    res.status(500).json(erro.message);
+  }
+});
+
 app.get('/respostas/:id_pergunta', (req, res) => {
   const id_pergunta = req.params.id_pergunta;
   const pergunta = modelo.get_pergunta(id_pergunta);
