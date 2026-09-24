@@ -1,0 +1,36 @@
+classDiagram
+    class PerguntasController {
+        +listar(req, res)
+        +cadastrar(req, res)
+    }
+
+    class BuscaController {
+        +buscar(req, res)
+    }
+
+    class PerguntaModel {
+        +listarTodas()
+        +cadastrar(texto, idUsuario)
+        +buscarPorTermo(termo)
+    }
+
+    class PerguntaView {
+        +paraListagem(perguntas)
+        +paraDetalhe(pergunta, respostas)
+    }
+
+    class PerguntaRepository {
+        +listarTodas()
+        +inserir(pergunta)
+    }
+
+    class Buscador {
+        +buscar(perguntas, termo)
+    }
+
+    PerguntasController --> PerguntaModel : usa
+    PerguntasController --> PerguntaView : usa
+    BuscaController --> PerguntaModel : usa
+    BuscaController --> PerguntaView : usa
+    PerguntaModel --> PerguntaRepository : usa
+    PerguntaModel --> Buscador : usa

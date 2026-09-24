@@ -1,0 +1,19 @@
+flowchart LR
+    subgraph Cliente["Camada de Apresentacao (Browser)"]
+        Visao["Visao\nReact SPA\n(repositorio esmforum-react)"]
+    end
+
+    subgraph Servidor["Backend Node.js / Express"]
+        direction TB
+        Controlador["Controlador\nserver.js\nRotas HTTP / API REST"]
+        Modelo["Camada de Negocio\nmodelo.js\nRegras do dominio"]
+        Acesso["Camada de Dados\nbd_utils.js"]
+        Controlador -->|"chama funcoes de"| Modelo
+        Modelo -->|"chama funcoes de"| Acesso
+    end
+
+    BD[("SQLite\nesmforum.db")]
+
+    Visao -- "Requisicoes HTTP\n(JSON, via fetch)" --> Controlador
+    Controlador -- "Respostas HTTP\n(JSON)" --> Visao
+    Acesso -- "SQL" --> BD
