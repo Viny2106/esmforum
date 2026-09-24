@@ -1,0 +1,15 @@
+stateDiagram-v2
+    [*] --> SemRespostas : Pergunta cadastrada
+
+    SemRespostas --> ComRespostas : Primeira resposta cadastrada
+    ComRespostas --> ComRespostas : Nova resposta cadastrada
+
+    SemRespostas --> SemRespostasVotada : Recebe primeiro voto
+    ComRespostas --> ComRespostasVotada : Recebe primeiro voto
+
+    SemRespostasVotada --> ComRespostasVotada : Primeira resposta cadastrada
+    SemRespostasVotada --> SemRespostasVotada : Novo voto registrado
+    ComRespostasVotada --> ComRespostasVotada : Nova resposta ou novo voto
+
+    ComRespostas --> [*]
+    ComRespostasVotada --> [*]

@@ -1,0 +1,36 @@
+classDiagram
+    class Usuario {
+        +int id
+        +string nome
+    }
+
+    class Pergunta {
+        +int id
+        +string texto
+        +datetime data_criacao
+        +int total_votos
+    }
+
+    class Resposta {
+        +int id
+        +string texto
+        +datetime data_criacao
+    }
+
+    class Voto {
+        +int id
+        +string tipo
+    }
+
+    class Tag {
+        +int id
+        +string nome
+    }
+
+    Usuario "1" --> "0..*" Pergunta : cadastra
+    Usuario "1" --> "0..*" Resposta : cadastra
+    Usuario "1" --> "0..*" Voto : registra
+
+    Pergunta "1" --> "0..*" Resposta : possui
+    Pergunta "1" --> "0..*" Voto : recebe
+    Pergunta "0..*" --> "0..*" Tag : classificada por

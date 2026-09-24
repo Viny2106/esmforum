@@ -1,0 +1,25 @@
+sequenceDiagram
+    actor Usuario
+    participant Frontend
+    participant API as API (server.js)
+    participant Modelo as Modelo (modelo.js)
+    participant BD as Banco de Dados
+
+    Usuario->>Frontend: Clica em upvote/downvote
+    Frontend->>API: POST /perguntas/:id/voto
+    API->>Modelo: registrar_voto(id_pergunta, tipo_voto)
+    Modelo->>BD: SELECT voto existente do usuario
+    BD-->>Modelo: resultado (existe ou nao)
+
+    alt Usuario ja votou antes
+        Modelo->>BD: DELETE voto anterior
+        BD-->>Modelo: confirmacao
+    end
+
+    Modelo->>BD: INSERT novo voto
+    BD-->>Modelo: confirmacao
+    Modelo->>BD: SELECT total de votos da pergunta
+    BD-->>Modelo: total atualizado
+    Modelo-->>API: total_votos
+    API-->>Frontend: 200 OK { total_votos }
+    Frontend-->>Usuario: Atualiza contador na tela

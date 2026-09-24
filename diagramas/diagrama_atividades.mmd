@@ -1,0 +1,13 @@
+flowchart TD
+    inicio((Inicio)) --> A[Usuario visualiza lista de perguntas]
+    A --> B[Usuario clica em upvote ou downvote]
+    B --> C{Usuario ja votou\nnesta pergunta?}
+    C -- Sim --> D[Remove voto anterior]
+    D --> E[Registra novo voto]
+    C -- Nao --> E
+    E --> F[Recalcula total de votos]
+    F --> G{Requisicao ao\nservidor teve sucesso?}
+    G -- Sim --> H[Atualiza contador na tela]
+    H --> fim((Fim))
+    G -- Nao --> I[Exibe mensagem de erro]
+    I --> fim
