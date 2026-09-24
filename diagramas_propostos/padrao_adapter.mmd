@@ -1,0 +1,31 @@
+classDiagram
+    class RepositorioDados {
+        <<interface>>
+        +query(sql, params)
+        +queryAll(sql, params)
+        +exec(sql, params)
+    }
+
+    class SQLiteAdapter {
+        -conexao
+        +query(sql, params)
+        +queryAll(sql, params)
+        +exec(sql, params)
+    }
+
+    class PostgresAdapter {
+        -pool
+        +query(sql, params)
+        +queryAll(sql, params)
+        +exec(sql, params)
+    }
+
+    class Modelo {
+        -repositorio: RepositorioDados
+        +listar_perguntas()
+        +cadastrar_pergunta(texto)
+    }
+
+    RepositorioDados <|.. SQLiteAdapter
+    RepositorioDados <|.. PostgresAdapter
+    Modelo --> RepositorioDados : depende de (DIP)

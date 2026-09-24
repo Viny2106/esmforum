@@ -1,0 +1,24 @@
+classDiagram
+    class Observador {
+        <<interface>>
+        +atualizar(pergunta)
+    }
+
+    class PerguntaObservavel {
+        -observadores: Observador[]
+        +registrarObservador(obs)
+        +removerObservador(obs)
+        +notificarObservadores(pergunta)
+    }
+
+    class NotificadorWebSocket {
+        +atualizar(pergunta)
+    }
+
+    class InvalidadorDeCache {
+        +atualizar(pergunta)
+    }
+
+    Observador <|.. NotificadorWebSocket
+    Observador <|.. InvalidadorDeCache
+    PerguntaObservavel --> "0..*" Observador : notifica

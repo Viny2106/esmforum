@@ -1,0 +1,35 @@
+classDiagram
+    class Pergunta {
+        <<interface>>
+        +obterTexto()
+        +obterMetadados()
+    }
+
+    class PerguntaBase {
+        -texto
+        -votos
+        +obterTexto()
+        +obterMetadados()
+    }
+
+    class PerguntaDecorator {
+        <<abstract>>
+        -perguntaDecorada: Pergunta
+        +obterTexto()
+        +obterMetadados()
+    }
+
+    class PerguntaComTags {
+        -tags: string[]
+        +obterMetadados()
+    }
+
+    class PerguntaEmDestaque {
+        +obterMetadados()
+    }
+
+    Pergunta <|.. PerguntaBase
+    Pergunta <|.. PerguntaDecorator
+    PerguntaDecorator <|-- PerguntaComTags
+    PerguntaDecorator <|-- PerguntaEmDestaque
+    PerguntaDecorator --> Pergunta : decora
