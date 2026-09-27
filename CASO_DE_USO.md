@@ -1,8 +1,5 @@
 # Caso de Uso — ESM Forum
 
-Detalhamento em Caso de Uso da História 1 (`HISTORIAS.md`), conforme a
-Tarefa 2 da Parte 2 do Projeto Final da disciplina de Engenharia de
-Software.
 
 - **História detalhada:** Sistema de Votação em Perguntas (escolhida por
   ser a mais rica em fluxos alternativos, especialmente o cenário em que o
