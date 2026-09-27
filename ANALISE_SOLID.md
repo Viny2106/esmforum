@@ -45,7 +45,7 @@ camada tem um único motivo para mudar: `server.js` muda se a API mudar,
 
 ---
 
-### 2. Single Responsibility Principle (SRP) — funções pequenas e coesas em `modelo.js`
+### 2. Single Responsibility Principle (SRP)  funções pequenas e coesas em `modelo.js`
 
 Cada função de `modelo.js` faz exatamente uma coisa, sem misturar
 responsabilidades:
@@ -70,7 +70,7 @@ facilita testar e reaproveitar cada função isoladamente (como já é feito em
 
 ---
 
-### 3. Dependency Inversion Principle (DIP) — parcialmente aplicado via `reconfig_bd`
+### 3. Dependency Inversion Principle (DIP)  parcialmente aplicado via `reconfig_bd`
 
 `modelo.js` não trabalha diretamente com o SQLite; ele conversa com o
 banco através da variável `bd`, que pode ser trocada em tempo de execução:
@@ -91,14 +91,14 @@ de dados no lugar da implementação real, em vez de ficar preso a uma única
 implementação concreta. Isso é a essência do DIP: o módulo de alto nível
 (`modelo.js`) não fica 100% amarrado a um detalhe de baixo nível (o SQLite
 real). Chamo de "parcial" porque a dependência inicial (linha 1) ainda é
-uma importação direta e concreta — ver Violação 1 abaixo, que detalha essa
+uma importação direta e concreta ver Violação 1 abaixo, que detalha essa
 limitação.
 
 ---
 
-## b) Oportunidades de Melhoria — Princípios Violados
+## b) Oportunidades de Melhoria Princípios Violados
 
-### 1. Dependency Inversion Principle (DIP) violado — dependência concreta por padrão
+### 1. Dependency Inversion Principle (DIP) violado dependência concreta por padrão
 
 Apesar do mecanismo `reconfig_bd` (ponto positivo 3), a dependência
 *padrão* de `modelo.js` ainda é uma importação direta do módulo concreto,
@@ -117,7 +117,7 @@ var bd = new Database('./bd/esmforum.db');  // caminho do arquivo "hardcoded"
 depender de abstrações, não de implementações concretas. Aqui, `modelo.js`
 (alto nível) depende diretamente de `bd_utils.js` (baixo nível, uma
 implementação específica em SQLite via `better-sqlite3`). Não existe uma
-interface/abstração formal entre eles — o `reconfig_bd` é um "remendo"
+interface/abstração formal entre eles o `reconfig_bd` é um "remendo"
 usado só nos testes, não uma inversão de dependência real usada em
 produção. Se um dia o projeto precisar trocar de SQLite para PostgreSQL,
 seria necessário reescrever `bd_utils.js` inteiro e reconferir se
@@ -132,7 +132,7 @@ classe, ou um container de dependências), em vez de `modelo.js` importar
 
 ---
 
-### 2. Open/Closed Principle (OCP) violado — tratamento de erro duplicado em cada rota
+### 2. Open/Closed Principle (OCP) violado tratamento de erro duplicado em cada rota
 
 Todas as rotas de `server.js` repetem o mesmo bloco `try/catch` na
 íntegra, sem nenhuma abstração compartilhada:
