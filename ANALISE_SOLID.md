@@ -4,13 +4,6 @@ Análise do código atual do backend (`server.js`, `modelo.js` e `bd/bd_utils.js
 conforme a Tarefa 1 da Parte 3 do Projeto Final da disciplina de Engenharia de
 Software.
 
-- **Aluno:** Vinicius da Costa Chaves
-
-> **Nota sobre a estrutura do projeto:** o enunciado fala em pastas
-> `routes/` e `models/`, mas o ESM Forum organiza o backend de forma mais
-> simples e flat: `server.js` concentra as rotas HTTP, `modelo.js` concentra
-> as regras de acesso a dados, e `bd/bd_utils.js` concentra o acesso bruto
-> ao banco SQLite. A análise abaixo usa essa estrutura real do projeto.
 
 ---
 
