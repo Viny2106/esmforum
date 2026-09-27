@@ -4,7 +4,7 @@ Proposta de 3 padrões de projeto para aplicar nas funcionalidades do
 sistema, conforme a Tarefa 4 da Parte 3 do Projeto Final da disciplina de
 Engenharia de Software.
 
-- **Aluno:** Vinicius da Costa Chaves
+- **Aluno:** Vinicius 
 - **Padrões escolhidos:** Observer, Adapter e Decorator — um para cada uma
   das 3 histórias de usuário definidas em `HISTORIAS.md` (votação, acesso
   a dados/busca e tags, respectivamente).
