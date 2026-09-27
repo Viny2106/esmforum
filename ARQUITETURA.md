@@ -3,9 +3,6 @@
 Análise da arquitetura atual do sistema ESM Forum, conforme a Tarefa 5 da
 Parte 3 do Projeto Final da disciplina de Engenharia de Software.
 
-- **Aluno:** Vinicius da Costa Chaves
-
----
 
 ## a) Identificação da Arquitetura
 
