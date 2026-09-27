@@ -4,7 +4,7 @@ Proposta de organização do código em camadas e de aplicação do padrão
 MVC no backend, conforme a Tarefa 6 da Parte 3 do Projeto Final da
 disciplina de Engenharia de Software.
 
-- **Aluno:** Vinicius da Costa Chaves
+- **Aluno:** Vinicius 
 
 ---
 
