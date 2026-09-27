@@ -3,7 +3,6 @@
 Documentação da Tarefa 2 da Parte 3 do Projeto Final da disciplina de
 Engenharia de Software.
 
-- **Aluno:** Vinicius da Costa Chaves
 - **Funcionalidade implementada:** História 3 — Busca de Perguntas por
   Palavra-chave (`HISTORIAS.md`), escolhida por ser a de menor complexidade
   de schema entre as 3 funcionalidades priorizadas na Parte 1/2 (não exige
