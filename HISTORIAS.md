@@ -4,7 +4,6 @@ Histórias de usuário para 3 das 5 funcionalidades solicitadas pelo cliente na
 Parte 1, conforme a Tarefa 1 da Parte 2 do Projeto Final da disciplina de
 Engenharia de Software.
 
-- **Aluno:** Vinicius 
 - **Funcionalidades escolhidas:** as mesmas 3 já priorizadas na Sprint 1 do
   `PROCESSO.md`  Sistema de votação, Categorização de perguntas e Busca por
   palavra-chave mantendo consistência entre o planejamento da Parte 1 e o
