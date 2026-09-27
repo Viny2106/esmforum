@@ -7,9 +7,9 @@ Software.
 
 ---
 
-## a) Pontos Positivos — Princípios Respeitados
+## a) Pontos Positivos Princípios Respeitados
 
-### 1. Single Responsibility Principle (SRP) — separação em três camadas
+### 1. Single Responsibility Principle (SRP) separação em três camadas
 
 O projeto já divide responsabilidades em três arquivos com papéis bem
 distintos:
