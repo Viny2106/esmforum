@@ -144,7 +144,7 @@ não é capturada e o servidor devolve um erro genérico do Express em vez da
 resposta JSON padronizada usada no resto do sistema.
 
 **Melhoria proposta:** mover essas duas linhas para dentro do bloco `try`,
-igualando o comportamento desta rota ao das demais — de novo, sem introduzir
+igualando o comportamento desta rota ao das demais de novo, sem introduzir
 nada novo, só corrigindo uma inconsistência pontual.
 
 ---
