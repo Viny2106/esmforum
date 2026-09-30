@@ -154,6 +154,6 @@ nada novo, só corrigindo uma inconsistência pontual.
 O código do ESM Forum é um exemplo razoavelmente fiel de Design Simples: duas
 camadas, sem abstrações antecipadas, sem código para requisitos que não
 existem. As duas oportunidades de melhoria identificadas são ajustes pequenos
-de consistência (DRY e tratamento de erro), não sinais de over-engineering —
+de consistência (DRY e tratamento de erro), não sinais de over-engineering 
 o que reforça que o sistema está no nível de complexidade adequado ao seu
 propósito didático.
